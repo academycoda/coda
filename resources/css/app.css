@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+@import './typography.css' layer(components);
+@import '../../vendor/livewire/flux/dist/flux.css';
+
+@source '../**/*';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-black: #000000;
+
+    --font-inter: 'Inter', sans-serif;
+}
+
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+
+    body {
+        @apply font-inter text-base text-black antialiased;
+    }
+
+    [x-cloak] {
+        @apply hidden!;
+    }
+}

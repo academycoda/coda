@@ -1,0 +1,37 @@
+{
+    "agents": [
+        "claude_code",
+        "codex"
+    ],
+    "cloud": false,
+    "guidelines": true,
+    "mcp": true,
+    "nightwatch": false,
+    "packages": [
+        "cosamey/spine",
+        "spatie/laravel-activitylog",
+        "spatie/laravel-medialibrary",
+        "spatie/laravel-pdf",
+        "spatie/laravel-sluggable",
+        "spatie/laravel-translatable"
+    ],
+    "sail": false,
+    "skills": [
+        "laravel-best-practices",
+        "configure-nightwatch",
+        "fluxui-development",
+        "livewire-development",
+        "pest-testing",
+        "tailwindcss-development",
+        "cosamey-blade",
+        "cosamey-eloquent",
+        "cosamey-filament",
+        "cosamey-laravel",
+        "cosamey-livewire",
+        "cosamey-test",
+        "medialibrary-development",
+        "laravel-pdf",
+        "sluggable-development",
+        "translatable-development"
+    ]
+}
