@@ -9,9 +9,10 @@ export default defineConfig({
       input: ['resources/css/app.css', 'resources/css/print.css', 'resources/js/app.js'],
       refresh: true,
       fonts: [
-        bunny('Inter', {
-          weights: [400, 700],
+        bunny('Onest', {
+          weights: [400, 500, 600],
         }),
+        bunny('Instrument Serif'),
       ],
     }),
     tailwindcss(),

@@ -3,14 +3,29 @@
 @source '../**/*';
 
 @theme {
-    --color-black: #000000;
+    --color-alabaster: #fbfaf6;
+    --color-parchment: #f4f1ea;
+    --color-oat: #ece7dc;
 
-    --font-inter: 'Inter', sans-serif;
+    --color-lavender: #e6e7ff;
+    --color-periwinkle: #8386ff;
+    --color-iris: #6063e8;
+
+    --color-amber: #e8a23c;
+    --color-sage: #4f8c5a;
+
+    --color-fog: #8b8b94;
+    --color-ash: #5c5c66;
+    --color-graphite: #2a2a33;
+    --color-midnight: #14141b;
+
+    --font-onest: 'Onest', sans-serif;
+    --font-instrument: 'Instrument Serif', serif;
 }
 
 @layer base {
     body {
-        @apply m-px font-inter text-[12px]/normal text-black antialiased;
+        @apply m-px font-onest text-[12px]/normal text-midnight antialiased;
     }
 
     @page {

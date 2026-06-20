@@ -12,5 +12,5 @@
 
 <meta
     name="theme-color"
-    content="#ffffff"
+    content="#8386ff"
 />
