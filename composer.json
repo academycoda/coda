@@ -1,8 +1,8 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "cosamey/bumble",
+    "name": "coda/coda",
     "type": "project",
-    "description": "Playful, opinionated starter kit for Laravel projects.",
+    "description": "Website for a local educational institution.",
     "keywords": ["laravel"],
     "license": "MIT",
     "require": {
@@ -11,7 +11,7 @@
         "laravel/framework": "^13.16.1",
         "laravel/nightwatch": "^1.28.0",
         "laravel/tinker": "^3.0.2",
-        "livewire/flux": "^2.14.1",
+        "livewire/flux": "^2.15.0",
         "livewire/livewire": "^4.3.1",
         "spatie/browsershot": "^5.4.0",
         "spatie/laravel-activitylog": "^5.0.0",

@@ -27,7 +27,7 @@
 
 <meta
     property="og:site_name"
-    content="Bumble"
+    content="Coda Academy"
 />
 
 <meta

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c3cd144877cb1139240129a8fdce438b",
+    "content-hash": "322755fc9e36cf065f2fefed90995e80",
     "packages": [
         {
             "name": "brick/math",
@@ -2307,16 +2307,16 @@
         },
         {
             "name": "livewire/flux",
-            "version": "v2.14.1",
+            "version": "v2.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/flux.git",
-                "reference": "44f240efd186b5629d5e4c4a4cc7bbba0111fb48"
+                "reference": "c570fb836278e9be881d08b7e386a1a62ab9faf7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/flux/zipball/44f240efd186b5629d5e4c4a4cc7bbba0111fb48",
-                "reference": "44f240efd186b5629d5e4c4a4cc7bbba0111fb48",
+                "url": "https://api.github.com/repos/livewire/flux/zipball/c570fb836278e9be881d08b7e386a1a62ab9faf7",
+                "reference": "c570fb836278e9be881d08b7e386a1a62ab9faf7",
                 "shasum": ""
             },
             "require": {
@@ -2367,9 +2367,9 @@
             ],
             "support": {
                 "issues": "https://github.com/livewire/flux/issues",
-                "source": "https://github.com/livewire/flux/tree/v2.14.1"
+                "source": "https://github.com/livewire/flux/tree/v2.15.0"
             },
-            "time": "2026-04-23T23:00:08+00:00"
+            "time": "2026-06-19T02:25:18+00:00"
         },
         {
             "name": "livewire/livewire",
@@ -4093,16 +4093,16 @@
         },
         {
             "name": "spatie/image",
-            "version": "3.9.4",
+            "version": "3.9.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/image.git",
-                "reference": "6a322b5e9268e3903d4fb6e1ff08b7dcc3aa9429"
+                "reference": "7ac0b9dab1100ddfc0c98afd12720f5b9fc0cd65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/image/zipball/6a322b5e9268e3903d4fb6e1ff08b7dcc3aa9429",
-                "reference": "6a322b5e9268e3903d4fb6e1ff08b7dcc3aa9429",
+                "url": "https://api.github.com/repos/spatie/image/zipball/7ac0b9dab1100ddfc0c98afd12720f5b9fc0cd65",
+                "reference": "7ac0b9dab1100ddfc0c98afd12720f5b9fc0cd65",
                 "shasum": ""
             },
             "require": {
@@ -4115,8 +4115,10 @@
                 "symfony/process": "^6.4|^7.0|^8.0"
             },
             "require-dev": {
+                "ext-ffi": "*",
                 "ext-gd": "*",
                 "ext-imagick": "*",
+                "jcupitt/vips": "^2.4",
                 "laravel/sail": "^1.34",
                 "pestphp/pest": "^3.0|^4.0",
                 "phpstan/phpstan": "^1.10.50",
@@ -4150,7 +4152,7 @@
                 "spatie"
             ],
             "support": {
-                "source": "https://github.com/spatie/image/tree/3.9.4"
+                "source": "https://github.com/spatie/image/tree/3.9.5"
             },
             "funding": [
                 {
@@ -4162,7 +4164,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-13T14:23:45+00:00"
+            "time": "2026-06-19T07:40:17+00:00"
         },
         {
             "name": "spatie/image-optimizer",
