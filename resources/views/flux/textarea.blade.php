@@ -15,14 +15,12 @@
 
 @php
 $classes = Flux::classes()
-    ->add('block p-3 w-full')
-    ->add('shadow-xs disabled:shadow-none border rounded-lg')
-    ->add('bg-white dark:bg-white/10 dark:disabled:bg-white/[7%]')
+    ->add('block w-full rounded-xl border p-4 shadow-xs transition focus:outline-hidden disabled:shadow-none')
+    ->add('bg-white dark:bg-white/5 dark:disabled:bg-white/[7%]')
     ->add($resize ? 'resize-y' : 'resize-none')
-    ->add('text-base sm:text-sm text-zinc-700 disabled:text-zinc-500 placeholder-zinc-400 disabled:placeholder-zinc-400/70 dark:text-zinc-300 dark:disabled:text-zinc-400 dark:placeholder-zinc-400 dark:disabled:placeholder-zinc-500')
-    ->add('border-zinc-200 border-b-zinc-300/80 dark:border-white/10')
-    ->add('data-invalid:shadow-none data-invalid:border-red-500 dark:data-invalid:border-red-500')
-    ;
+    ->add('text-base text-zinc-700 disabled:text-zinc-500 placeholder-zinc-400 disabled:placeholder-zinc-400/70 sm:text-sm dark:text-white dark:disabled:text-white/40 dark:placeholder-white/30 dark:disabled:placeholder-white/20')
+    ->add('border-zinc-200 border-b-zinc-300/80 dark:border-white/20 dark:focus:border-periwinkle dark:focus:ring-2 dark:focus:ring-periwinkle/25')
+    ->add('data-invalid:shadow-none data-invalid:border-red-500 dark:data-invalid:border-red-500');
 
 $resizeStyle = match ($resize) {
     'none' => 'resize: none',

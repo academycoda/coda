@@ -12,23 +12,24 @@ $invalid ??= ($name && $errors->has($name));
 
 $classes = Flux::classes()
     ->add('appearance-none') // Strip the browser's default <select> styles...
-    ->add('[:where(&)]:w-full ps-3 pe-10 block')
+    ->add('[:where(&)]:w-full ps-4 pe-10 block transition focus:outline-hidden')
     ->add(match ($size) {
-        default => 'h-10 py-2 text-base sm:text-sm leading-[1.375rem] rounded-lg',
+        default => 'h-12 py-3 text-base sm:text-sm leading-[1.375rem] rounded-xl',
         'sm' => 'h-8 py-1.5 text-sm leading-[1.125rem] rounded-md',
         'xs' => 'h-6 text-xs leading-[1.125rem] rounded-md',
     })
     ->add('shadow-xs border')
-    ->add('bg-white dark:bg-white/10 dark:disabled:bg-white/[7%]')
-    ->add('text-zinc-700 dark:text-zinc-300 disabled:text-zinc-500 dark:disabled:text-zinc-400')
+    ->add('bg-white dark:bg-white/5 dark:disabled:bg-white/[7%]')
+    ->add('text-zinc-700 dark:text-white disabled:text-zinc-500 dark:disabled:text-white/60')
     // Make the placeholder match the text color of standard input placeholders...
     ->add('has-[option.placeholder:checked]:text-zinc-400 dark:has-[option.placeholder:checked]:text-zinc-400')
     // Options on Windows don't inherit dark mode styles, so we need to force them...
-    ->add('dark:[&>option]:bg-zinc-700 dark:[&>option]:text-white')
+    ->add('dark:[&>option]:bg-midnight dark:[&>option]:text-white')
     ->add('disabled:shadow-none')
+    ->add('dark:focus:border-periwinkle dark:focus:ring-2 dark:focus:ring-periwinkle/25')
     ->add($invalid
         ? 'border border-red-500'
-        : 'border border-zinc-200 border-b-zinc-300/80 dark:border-white/10'
+        : 'border border-zinc-200 border-b-zinc-300/80 dark:border-white/20 dark:disabled:border-white/10'
     )
     ;
 @endphp

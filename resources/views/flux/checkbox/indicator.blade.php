@@ -8,14 +8,14 @@ $classes = Flux::classes()
     ->add('[ui-checkbox[data-checked]:not([data-indeterminate])_&>svg:first-child]:block [ui-checkbox[data-indeterminate]_&>svg:last-child]:block')
     ->add([
         'border',
-        'border-zinc-300 dark:border-white/10',
+        'border-zinc-300 dark:border-white/25',
         '[ui-checkbox[disabled]_&]:border-zinc-200 dark:[ui-checkbox[disabled]_&]:border-white/5',
         '[ui-checkbox[data-checked]_&]:border-transparent [ui-checkbox[data-indeterminate]_&]:border-transparent',
         '[ui-checkbox[disabled][data-checked]_&]:border-transparent [ui-checkbox[disabled][data-indeterminate]_&]:border-transparent',
         '[print-color-adjust:exact]',
     ])
     ->add([
-        'bg-white dark:bg-white/10',
+        'bg-white dark:bg-white/5',
         '[ui-checkbox[data-checked]_&]:bg-[var(--color-accent)]',
         'hover:[ui-checkbox[data-checked]_&]:bg-(--color-accent)',
         'focus:[ui-checkbox[data-checked]_&]:bg-(--color-accent)',

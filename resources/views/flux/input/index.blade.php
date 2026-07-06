@@ -90,20 +90,20 @@ $inputLoadingClasses = Flux::classes()
     ;
 
 $classes = Flux::classes()
-    ->add('w-full border rounded-lg block disabled:shadow-none dark:shadow-none')
+    ->add('w-full border rounded-xl block transition focus:outline-hidden disabled:shadow-none dark:shadow-none')
     ->add('appearance-none') // Without this, input[type="date"] on mobile doesn't respect w-full...
     ->add(match ($size) {
-        default => 'text-base sm:text-sm py-2 h-10 leading-[1.375rem]', // This makes the height of the input 40px (same as buttons and such...)
+        default => 'text-base sm:text-sm py-3 h-12 leading-[1.375rem]',
         'sm' => 'text-sm py-1.5 h-8 leading-[1.125rem]',
         'xs' => 'text-xs py-1.5 h-6 leading-[1.125rem]',
     })
     ->add(match ($hasLeadingIcon) {
-        true => 'ps-10',
-        false => 'ps-3',
+        true => 'ps-11',
+        false => 'ps-4',
     })
     ->add(match ($countOfTrailingIcons) {
         // Make sure there's enough padding on the right side of the input to account for all the icons...
-        0 => 'pe-3',
+        0 => 'pe-4',
         1 => 'pe-10',
         2 => 'pe-16',
         3 => 'pe-23',
@@ -112,15 +112,15 @@ $classes = Flux::classes()
         6 => 'pe-44',
     })
     ->add(match ($variant) { // Background...
-        'outline' => 'bg-white dark:bg-white/10 dark:disabled:bg-white/[7%]',
+        'outline' => 'bg-white dark:bg-white/5 dark:disabled:bg-white/[7%]',
         'filled'  => 'bg-zinc-800/5 dark:bg-white/10 dark:disabled:bg-white/[7%]',
     })
     ->add(match ($variant) { // Text color
-        'outline' => 'text-zinc-700 disabled:text-zinc-500 placeholder-zinc-400 disabled:placeholder-zinc-400/70 dark:text-zinc-300 dark:disabled:text-zinc-400 dark:placeholder-zinc-400 dark:disabled:placeholder-zinc-500',
+        'outline' => 'text-zinc-700 disabled:text-zinc-500 placeholder-zinc-400 disabled:placeholder-zinc-400/70 dark:text-white dark:disabled:text-white/40 dark:placeholder-white/30 dark:disabled:placeholder-white/20',
         'filled'  => 'text-zinc-700 placeholder-zinc-500 disabled:placeholder-zinc-400 dark:text-zinc-200 dark:placeholder-white/60 dark:disabled:placeholder-white/40',
     })
     ->add(match ($variant) { // Border...
-        'outline' => 'shadow-xs border-zinc-200 border-b-zinc-300/80 disabled:border-b-zinc-200 dark:border-white/10 dark:disabled:border-white/5',
+        'outline' => 'shadow-xs border-zinc-200 border-b-zinc-300/80 disabled:border-b-zinc-200 dark:border-white/20 dark:focus:border-periwinkle dark:focus:ring-2 dark:focus:ring-periwinkle/25 dark:disabled:border-white/10',
         'filled'  => 'border-0',
     })
     ->add(match ($variant) { // Invalid...

@@ -62,7 +62,8 @@ if ($loading && $type !== 'submit' && ! $isJsMethod) {
 }
 
 $classes = Flux::classes()
-    ->add('relative items-center font-medium justify-center gap-2 whitespace-nowrap')
+    ->add('relative items-center font-medium justify-center gap-2.5 whitespace-nowrap transition')
+    ->add('focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-periwinkle')
     ->add('disabled:opacity-75 dark:disabled:opacity-75 disabled:cursor-default disabled:pointer-events-none')
     ->add(match ($align) {
         'start' => 'justify-start',
@@ -70,14 +71,14 @@ $classes = Flux::classes()
         'end' => 'justify-end',
     })
     ->add(match ($size) { // Size...
-        'base' => 'h-10 text-sm rounded-lg' . ' ' . (
+        'base' => 'h-12 text-base rounded-full' . ' ' . (
             $square
-                ? 'w-10'
+                ? 'w-12'
                 // If we have an icon, we want to reduce the padding on the side that has the icon...
-                : ($iconLeading && $iconLeading !== '' ? 'ps-3' : 'ps-4') . ' ' . ($iconTrailing && $iconTrailing !== '' ? 'pe-3' : 'pe-4')
+                : ($iconLeading && $iconLeading !== '' ? 'ps-5' : 'ps-6') . ' ' . ($iconTrailing && $iconTrailing !== '' ? 'pe-5' : 'pe-6')
         ),
-        'sm' => 'h-8 text-sm rounded-md' . ' ' . ($square ? 'w-8' : 'px-3'),
-        'xs' => 'h-6 text-xs rounded-md' . ' ' . ($square ? 'w-6' : 'px-2'),
+        'sm' => 'h-10 text-sm rounded-full' . ' ' . ($square ? 'w-10' : 'px-4'),
+        'xs' => 'h-8 text-xs rounded-full' . ' ' . ($square ? 'w-8' : 'px-3'),
     })
     ->add('inline-flex') // Buttons are inline by default but links are blocks, so inline-flex is needed here to ensure link-buttons are displayed the same as buttons...
     ->add($inset ? match ($size) { // Inset...
@@ -92,32 +93,33 @@ $classes = Flux::classes()
             : Flux::applyInset($inset, top: '-mt-1', right: '-me-2', bottom: '-mb-1', left: '-ms-2'),
     } : '')
     ->add(match ($variant) { // Background color...
-        'primary' => 'bg-[var(--color-accent)] hover:bg-[color-mix(in_oklab,_var(--color-accent),_transparent_10%)]',
-        'filled' => 'bg-zinc-800/5 hover:bg-zinc-800/10 dark:bg-white/10 dark:hover:bg-white/20',
-        'outline' => 'bg-white hover:bg-zinc-50 dark:bg-zinc-700 dark:hover:bg-zinc-600/75',
+        'primary' => 'bg-[var(--color-accent)] hover:bg-[color-mix(in_oklab,_var(--color-accent),_transparent_12%)]',
+        'filled' => 'bg-white hover:bg-alabaster dark:bg-white/10 dark:hover:bg-white/20',
+        'outline' => 'bg-transparent hover:bg-midnight/5 dark:bg-transparent dark:hover:bg-white/10',
         'danger' => 'bg-red-500 hover:bg-red-600 dark:bg-red-600 dark:hover:bg-red-500',
         'ghost' => 'bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15',
         'subtle' => 'bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15',
     })
     ->add(match ($variant) { // Text color...
         'primary' => 'text-[var(--color-accent-foreground)]',
-        'filled' => 'text-zinc-800 dark:text-white',
-        'outline' => 'text-zinc-800 dark:text-white',
+        'filled' => 'text-midnight dark:text-white',
+        'outline' => 'text-midnight dark:text-white',
         'danger' => 'text-white',
         'ghost' => 'text-zinc-800 dark:text-white',
         'subtle' => 'text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white',
     })
     ->add(match ($variant) { // Border color...
-        'primary' => 'border border-black/10 dark:border-0',
-        'outline' => 'border border-zinc-200 hover:border-zinc-200 border-b-zinc-300/80 dark:border-zinc-600 dark:hover:border-zinc-600',
+        'primary' => 'border border-[var(--color-accent)]',
+        'filled' => 'border border-white',
+        'outline' => 'border border-midnight dark:border-white/50',
          default => '',
     })
     ->add(match ($variant) { // Shadows...
-        'primary' => 'shadow-[inset_0px_1px_--theme(--color-white/.2)]',
+        'primary' => 'shadow-none',
         'danger' => 'shadow-[inset_0px_1px_var(--color-red-500),inset_0px_2px_--theme(--color-white/.15)] dark:shadow-none',
         'outline' => match ($size) {
-            'base' => 'shadow-xs',
-            'sm' => 'shadow-xs',
+            'base' => 'shadow-none',
+            'sm' => 'shadow-none',
             'xs' => 'shadow-none',
         },
         default => '',
@@ -137,6 +139,9 @@ $classes = Flux::classes()
         $type === 'submit' ? '[&[disabled]]:pointer-events-none' : 'data-loading:pointer-events-none data-flux-loading:pointer-events-none',
     ] : [])
     ->add($variant === 'primary' ? match ($color) {
+        null => '[--color-accent:var(--color-midnight)] [--color-accent-content:var(--color-midnight)] [--color-accent-foreground:var(--color-white)] dark:[--color-accent:var(--color-white)] dark:[--color-accent-content:var(--color-white)] dark:[--color-accent-foreground:var(--color-midnight)]',
+        'midnight' => '[--color-accent:var(--color-midnight)] [--color-accent-content:var(--color-midnight)] [--color-accent-foreground:var(--color-white)] dark:[--color-accent:var(--color-white)] dark:[--color-accent-content:var(--color-white)] dark:[--color-accent-foreground:var(--color-midnight)]',
+        'periwinkle' => '[--color-accent:var(--color-periwinkle)] [--color-accent-content:var(--color-iris)] [--color-accent-foreground:var(--color-white)] dark:[--color-accent:var(--color-periwinkle)] dark:[--color-accent-content:var(--color-periwinkle)] dark:[--color-accent-foreground:var(--color-white)]',
         'slate' => '[--color-accent:var(--color-slate-800)] [--color-accent-content:var(--color-slate-800)] [--color-accent-foreground:var(--color-white)] dark:[--color-accent:var(--color-white)] dark:[--color-accent-content:var(--color-white)] dark:[--color-accent-foreground:var(--color-slate-800)]',
         'gray' => '[--color-accent:var(--color-gray-800)] [--color-accent-content:var(--color-gray-800)] [--color-accent-foreground:var(--color-white)] dark:[--color-accent:var(--color-white)] dark:[--color-accent-content:var(--color-white)] dark:[--color-accent-foreground:var(--color-gray-800)]',
         'zinc' => '[--color-accent:var(--color-zinc-800)] [--color-accent-content:var(--color-zinc-800)] [--color-accent-foreground:var(--color-white)] dark:[--color-accent:var(--color-white)] dark:[--color-accent-content:var(--color-white)] dark:[--color-accent-foreground:var(--color-zinc-800)]',

@@ -24,7 +24,7 @@ $classes = Flux::classes()
     })
     ->add(match ($variant) {
         default => [ // Adjust spacing around label...
-            '*:data-flux-label:mb-3 [&>[data-flux-label]:has(+[data-flux-description])]:mb-2',
+            '*:data-flux-label:mb-2 [&>[data-flux-label]:has(+[data-flux-description])]:mb-2',
         ],
         'bare' => '',
         'inline' => '',

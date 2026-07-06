@@ -12,9 +12,9 @@
 @php
     $classes = Flux::classes()
         ->add('inline-flex items-center')
-        ->add('text-sm font-medium')
+        ->add('font-mono text-xs font-medium tracking-widest uppercase')
         ->add($srOnly ? 'sr-only' : '')
-        ->add('[:where(&)]:text-zinc-800 [:where(&)]:dark:text-white')
+        ->add('[:where(&)]:text-zinc-800 [:where(&)]:dark:text-white/60')
         ->add('[&:has([data-flux-label-trailing])]:flex')
         ;
 @endphp
