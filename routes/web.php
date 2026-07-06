@@ -6,4 +6,6 @@ use Mey\Spine\Http\Middleware\TrackLastPresence;
 
 Route::middleware(TrackLastPresence::class)->group(function (): void {
     Route::get('/', Controllers\HomeController::class)->name('home');
+
+    Route::get('/courses/{course:slug}', [Controllers\CourseController::class, 'show'])->name('courses.show');
 });

@@ -1,4 +1,4 @@
-<title>{{ $title ?? '' }}</title>
+<title>{{ ($title ?? '') . ' | Coda Academy' }}</title>
 
 <meta
     name="description"
@@ -12,7 +12,7 @@
 
 <meta
     property="og:title"
-    content="{{ $title ?? '' }}"
+    content="{{ ($title ?? '') . ' | Coda Academy' }}"
 />
 
 <meta

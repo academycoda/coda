@@ -1,18 +1,20 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\View\Components\Sections\Common;
 
 use App\Models\Course;
 use Illuminate\Contracts\View\View;
+use Illuminate\View\Component;
 
-class HomeController
+class Footer extends Component
 {
-    public function __invoke(): View
+    public function render(): View
     {
-        return view('pages.static.home', [
+        return view('components.sections.common.footer', [
             'courses' => Course::query()
                 ->published()
                 ->orderBy('start_date')
+                ->limit(5)
                 ->get(),
         ]);
     }
