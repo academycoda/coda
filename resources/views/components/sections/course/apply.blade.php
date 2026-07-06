@@ -145,7 +145,7 @@
             </div>
 
             @if ($course->status === CourseStatus::Open)
-                <div></div>
+                <livewire:course-application :course="$course" />
             @endif
         </div>
     </x-ui.container>
