@@ -24,14 +24,12 @@
     <x-ui.container>
         <div
             @class([
-                'relative grid gap-10 rounded-4xl bg-midnight p-6 text-white sm:p-8 md:p-12 xl:p-14',
-                'items-center overflow-hidden lg:grid-cols-[0.9fr_1.1fr] lg:items-start lg:gap-12 lg:overflow-visible' =>
-                    $course->status === CourseStatus::Open,
-                'items-center overflow-hidden' => $course->status !== CourseStatus::Open,
+                'relative grid items-center gap-10 overflow-hidden rounded-4xl bg-midnight p-6 text-white sm:p-8 md:p-12 xl:p-14',
+                'lg:grid-cols-[0.9fr_1.1fr] lg:items-start lg:gap-12' => $course->status === CourseStatus::Open,
             ])
         >
             <x-art.symbol
-                class="absolute -right-24 -bottom-24 size-80 fill-periwinkle/18"
+                class="absolute -right-24 -bottom-24 z-10 size-80 fill-periwinkle/20"
                 aria-hidden="true"
             />
 

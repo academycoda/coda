@@ -1,4 +1,4 @@
-<div class="dark">
+<div class="dark relative z-20">
     @if ($submitted)
         <div class="relative rounded-2xl border border-periwinkle/40 bg-periwinkle/10 p-10 text-center">
             <div class="mx-auto flex size-14 items-center justify-center rounded-full bg-periwinkle">
