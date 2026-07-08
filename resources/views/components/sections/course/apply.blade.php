@@ -36,7 +36,7 @@
             <div
                 @class([
                     'relative',
-                    'lg:sticky lg:top-24 lg:self-start' => $course->status === CourseStatus::Open,
+                    'pb-2 lg:self-start lg:pb-4' => $course->status === CourseStatus::Open,
                     'max-w-3xl' => $course->status !== CourseStatus::Open,
                 ])
             >

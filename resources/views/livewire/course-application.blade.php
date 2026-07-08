@@ -1,6 +1,8 @@
-<div class="dark relative z-20">
+<div class="dark relative z-20 w-full">
     @if ($submitted)
-        <div class="relative rounded-2xl border border-periwinkle/40 bg-periwinkle/10 p-10 text-center">
+        <div
+            class="relative w-full rounded-2xl border border-periwinkle/40 bg-periwinkle/10 px-6 py-10 text-center sm:px-8 lg:py-12"
+        >
             <div class="mx-auto flex size-14 items-center justify-center rounded-full bg-periwinkle">
                 <x-art.icons.huge.tick class="size-6 fill-white" />
             </div>

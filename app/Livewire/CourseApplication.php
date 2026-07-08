@@ -29,6 +29,17 @@ class CourseApplication extends Component
         Mail::to($application->email)->send(new ApplicationSubmitted($application));
 
         $this->submitted = true;
+
+        $this->trackEvent();
+    }
+
+    private function trackEvent(): void
+    {
+        $this->js("
+            if (window.fathom) {
+                window.fathom.trackEvent('application submitted: {$this->course->title}');
+            }
+        ");
     }
 
     #[Computed]
