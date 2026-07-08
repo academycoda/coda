@@ -32,7 +32,7 @@
 
 <meta
     property="og:image"
-    content="{{ asset('assets/img/open-graph.jpg') }}"
+    content="{{ asset('assets/img/open-graph.png') }}"
 />
 
 <meta
