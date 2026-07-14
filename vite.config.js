@@ -17,8 +17,15 @@ export default defineConfig({
       fonts: [
         bunny('Onest', {
           weights: [400, 500, 600],
+          subsets: ['latin', 'latin-ext'],
+          preload: [{ weight: 400 }],
         }),
-        bunny('Instrument Serif'),
+        bunny('Instrument Serif', {
+          weights: [400],
+          styles: ['normal', 'italic'],
+          subsets: ['latin', 'latin-ext'],
+          preload: [{ weight: 400 }],
+        }),
       ],
     }),
     tailwindcss(),
