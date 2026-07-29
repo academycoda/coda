@@ -13,7 +13,8 @@
         "spatie/laravel-medialibrary",
         "spatie/laravel-pdf",
         "spatie/laravel-sluggable",
-        "spatie/laravel-translatable"
+        "spatie/laravel-translatable",
+        "spatie/laravel-backup"
     ],
     "sail": false,
     "skills": [
@@ -29,6 +30,7 @@
         "cosamey-laravel",
         "cosamey-livewire",
         "cosamey-test",
+        "laravel-backup",
         "medialibrary-development",
         "laravel-pdf",
         "sluggable-development",
