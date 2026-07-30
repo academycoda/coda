@@ -1,7 +1,4 @@
-<x-layouts.app
-    title="Moderná akadémia programovania"
-    description="Coda Academy je programovacia akadémia v Trnave pre mladých ľudí. Učíme webový vývoj, tvorivé myslenie a prácu s AI na reálnych projektoch."
->
+<x-layouts.app>
     <x-sections.common.header />
 
     <main>

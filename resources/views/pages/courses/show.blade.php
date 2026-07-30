@@ -1,7 +1,4 @@
-<x-layouts.app
-    title="{{ $course->meta['title'] }}"
-    description="{{ $course->meta['description'] }}"
->
+<x-layouts.app>
     <x-sections.common.header />
 
     <main>
