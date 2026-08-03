@@ -83,7 +83,7 @@
                 <flux:textarea
                     wire:model="form.bio"
                     label="Niečo o tebe"
-                    placeholder="Napíš nám pár viet o sebe. Čo ťa priviedlo k programovaniu, či už máš nejaké skúsenosti, čo rád/rada robíš na počítači a čo by si sa chcel(a) naučiť."
+                    placeholder="Napíš nám pár viet o sebe. Prečo ťa láka naučiť sa programovať a čo rád/rada robíš na počítači. Predchádzajúce skúsenosti nepotrebuješ — dôležitá je chuť učiť sa a tvoriť."
                     rows="6"
                     class="min-h-36"
                 />

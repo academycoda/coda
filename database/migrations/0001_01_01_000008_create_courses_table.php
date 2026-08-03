@@ -25,6 +25,7 @@ return new class extends Migration
             $table->timestamp('closed_at')->nullable();
             $table->date('start_date');
             $table->date('end_date');
+            $table->string('schedule')->nullable();
             $table->json('outcomes')->nullable();
             $table->json('faqs')->nullable();
             $table->json('tags')->nullable();

@@ -8,7 +8,7 @@
     $details = [
         ['Deadline', $course->closed_at?->translatedFormat('j. n. Y G:i') ?? 'Čoskoro'],
         ['Kapacita', $course->capacity . ' študentov'],
-        ['Začiatok', $course->start_date->translatedFormat('m/Y')],
+        ['Začiatok', $course->start_date->translatedFormat('j. n. Y')],
         ['Cena', $course->price == 0.0 ? 'Zadarmo' : Number::currency($course->price)],
     ];
 

@@ -6,10 +6,10 @@
 
 @php
     $meta = [
-        ['Začiatok', $course->start_date->translatedFormat('m/Y')],
-        ['Trvanie', "{$course->duration_weeks} týždňov"],
-        ['Kapacita', "{$course->capacity} študentov"],
+        ['Trvanie', $course->duration_range],
+        ['Čas', $course->schedule ?? 'TBA'],
         ['Miesto', $course->venue?->name ?? 'TBA'],
+        ['Kapacita', "{$course->capacity} študentov"],
         ['Pre koho', $course->audience ?? 'TBA'],
         ['Cena', $course->price == 0.0 ? 'zadarmo' : Number::currency($course->price)],
     ];
@@ -61,7 +61,7 @@
         </p>
     @endif
 
-    <dl class="relative mt-7 grid gap-x-7 gap-y-3.5 text-sm sm:grid-cols-2">
+    <dl class="relative mt-7 grid gap-x-7 gap-y-3.5 text-sm sm:grid-cols-2 sm:[&>*:nth-child(-n+2)]:col-span-2">
         @foreach ($meta as [$label, $value])
             <div class="flex justify-between gap-4 border-b border-midnight/10 pb-2 dark:border-white/10">
                 <dt class="text-fog dark:text-white/55">

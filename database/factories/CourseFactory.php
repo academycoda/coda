@@ -32,6 +32,7 @@ class CourseFactory extends Factory
             'closed_at' => null,
             'start_date' => $start = Carbon::instance(fake()->dateTimeBetween('+1 month', '+1 year'))->startOfDay(),
             'end_date' => $start->copy()->addWeeks(fake()->numberBetween(8, 20)),
+            'schedule' => null,
             'outcomes' => fake()->sentences(mt_rand(3, 5)),
             'faqs' => [],
             'tags' => fake()->randomElements(['HTML', 'CSS', 'PHP', 'Laravel', 'Blade', 'Tailwind', 'AI', 'Git'], 4),

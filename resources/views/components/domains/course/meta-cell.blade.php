@@ -4,7 +4,12 @@
     'highlight' => false,
 ])
 
-<div @class(['border-midnight/10 p-5 lg:border-r last:lg:border-r-0', 'bg-lavender/70' => $highlight])>
+<div
+    @class([
+        'border-midnight/10 p-5 max-sm:not-last:border-b sm:max-lg:odd:border-r sm:max-lg:nth-[-n+2]:border-b lg:border-r last:lg:border-r-0',
+        'bg-lavender/70' => $highlight,
+    ])
+>
     <div
         @class([
             'font-mono text-xs tracking-widest uppercase',

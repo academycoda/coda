@@ -30,6 +30,7 @@ use Illuminate\Support\Collection;
  * @property ?Carbon $closed_at
  * @property Carbon $start_date
  * @property Carbon $end_date
+ * @property ?string $schedule
  * @property ?array<int, string> $outcomes
  * @property ?array<string, string> $faqs
  * @property ?array<int, string> $tags
@@ -37,6 +38,7 @@ use Illuminate\Support\Collection;
  * @property-read ?Carbon $created_at
  * @property-read ?Carbon $updated_at
  * @property-read CourseStatus $status
+ * @property-read string $duration_range
  * @property-read int $duration_weeks
  * @property-read bool $is_published
  * @property-read bool $is_open
@@ -70,6 +72,12 @@ class Course extends Model
             'tags' => 'array',
             'meta' => 'array',
         ];
+    }
+
+    /** @return Attribute<non-falsy-string, never> */
+    protected function durationRange(): Attribute
+    {
+        return Attribute::get(fn (): string => $this->start_date->translatedFormat('j. n. Y').' - '.$this->end_date->translatedFormat('j. n. Y'));
     }
 
     /** @return Attribute<int, never> */
