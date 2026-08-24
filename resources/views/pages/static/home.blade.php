@@ -14,7 +14,7 @@
 
         <x-sections.home.ai />
 
-        <x-sections.home.location />
+        <x-sections.home.company />
 
         <x-sections.home.faq />
 

@@ -7,6 +7,6 @@
         Kurzy
     </a>
     <a href="{{ route('home') . '#events' }}">Podujatia</a>
-    <a href="{{ route('home') . '#location' }}">Kde nás nájdeš</a>
+    <a href="{{ route('home') . '#company' }}">Kto sme</a>
     <a href="{{ route('home') . '#faq' }}">FAQ</a>
 </nav>

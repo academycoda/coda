@@ -12,8 +12,8 @@
             </x-slot>
             <x-slot:subtitle>
                 V závere kurzu budeš pracovať na vlastnom projekte. Môžeš si vybrať z našich návrhov alebo prísť s
-                vlastným nápadom. Cieľom je vytvoriť aplikáciu, ktorá ti dáva zmysel a na ktorej ukážeš všetko, čo si sa
-                počas kurzu naučil.
+                vlastným nápadom. Cieľom je vytvoriť aplikáciu, ktorá ti dáva zmysel a na ktorej využiješ všetko, čo sa
+                počas kurzu naučíš.
             </x-slot>
         </x-ui.heading>
 

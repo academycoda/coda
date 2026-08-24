@@ -1,8 +1,8 @@
 @php
     $types = [
-        ['Workshop', 'Praktické stretnutia zamerané na jednu konkrétnu tému — napríklad AI workflow, Git alebo tvorbu prvého webu.'],
-        ['Prednáška', 'Krátke talky od ľudí, ktorí denne vytvárajú weby, produkty a digitálne nástroje.'],
-        ['Open session', 'Neformálne stretnutie, kde môžeš prísť s otázkou, nápadom alebo rozpracovaným projektom.'],
+        ['Workshop', 'Vyskúšaš si jednu konkrétnu tému – napríklad AI workflow, Git alebo tvorbu prvého webu.'],
+        ['Prednáška', 'Zistíš, ako premýšľajú a pracujú ľudia, ktorí denne vytvárajú weby, produkty a digitálne nástroje.'],
+        ['Open session', 'Príď s otázkou, nápadom alebo rozpracovaným projektom a posuň ho ďalej spolu s nami.'],
     ];
 @endphp
 
@@ -20,8 +20,7 @@
                         <span class="font-instrument font-normal text-iris italic">Na ochutnanie.</span>
                     </x-slot>
                     <x-slot:subtitle>
-                        Workshopy, prednášky a open sessions pre tých, ktorí si chcú vyskúšať jednu tému bez veľkého
-                        záväzku.
+                        Vyber si workshop, prednášku alebo open session a vyskúšaj si jednu tému bez veľkého záväzku.
                     </x-slot>
                 </x-ui.heading>
             </div>

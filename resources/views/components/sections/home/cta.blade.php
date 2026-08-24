@@ -28,12 +28,12 @@
                 <p class="mt-6 max-w-xl text-lg leading-8 text-white/85">
                     Prvý kurz štartuje na jeseň.
                     <br />
-                    10 miest, 1 výber, 20 týždňov, 1 vlastná aplikácia.
+                    10 miest, 1 výber, 5 mesiacov, 1 vlastná aplikácia.
                 </p>
                 <div class="mt-9 flex flex-wrap gap-3.5">
                     <flux:button
                         variant="filled"
-                        href="#courses"
+                        href="{{ route('courses.show', 'web-101') }}"
                     >
                         Pozri detail a prihlás sa
                         <x-slot:iconTrailing>

@@ -83,7 +83,7 @@
                 <flux:textarea
                     wire:model="form.bio"
                     label="Niečo o tebe"
-                    placeholder="Napíš nám pár viet o sebe. Prečo ťa láka naučiť sa programovať a čo rád/rada robíš na počítači. Predchádzajúce skúsenosti nepotrebuješ — dôležitá je chuť učiť sa a tvoriť."
+                    placeholder="Napíš nám pár viet o sebe. Prečo ťa láka naučiť sa programovať a čo ťa baví robiť na počítači. Predchádzajúce skúsenosti nepotrebuješ — dôležitá je chuť učiť sa a tvoriť."
                     rows="6"
                     class="min-h-36"
                 />
@@ -145,7 +145,7 @@
                         accent="periwinkle"
                     />
                     <flux:label class="font-sans text-sm tracking-normal text-white/70 normal-case">
-                        Chcem byť informovaný/á o budúcich kurzoch a podujatiach.
+                        Chcem dostávať informácie o budúcich podujatiach.
                     </flux:label>
                     <flux:error name="form.marketing_consent" />
                 </flux:field>

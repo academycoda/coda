@@ -4,7 +4,7 @@
     aria-label="Technológie"
 >
     @php
-        $items = ['HTML', 'CSS', 'Laravel 13', 'Blade', 'Tailwind CSS', 'Vue 3', 'Composition API', 'Inertia.js', 'Git', 'GitHub', 'React 19', 'AI pair-coding', 'Deploy', 'CI/CD', 'PHP 8.5', 'MySQL'];
+        $items = ['HTML', 'CSS', 'Laravel 13', 'Blade', 'Tailwind CSS', 'Vue 3', 'Livewire', 'PostgreSQL', 'Inertia.js', 'Git', 'GitHub', 'React 19', 'AI pair-coding', 'Deploy', 'CI/CD', 'PHP 8.5', 'MySQL'];
     @endphp
 
     <div class="animate-marquee flex w-max gap-12 px-5 motion-reduce:animate-none">

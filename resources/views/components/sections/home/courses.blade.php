@@ -16,8 +16,8 @@
                     <span class="font-instrument font-normal text-iris italic">Lebo učenie potrebuje čas.</span>
                 </x-slot>
                 <x-slot:subtitle>
-                    Technológie sa nedajú naučiť za jedno popoludnie. Preto organizujeme dlhodobé kurzy, kde študenti
-                    postupne budujú vedomosti, skúsenosti aj vlastné projekty.
+                    Technológie sa za jedno popoludnie nenaučíš. V dlhodobom kurze si postupne vybuduješ vedomosti,
+                    získaš skúsenosti a vytvoríš vlastný projekt.
                 </x-slot>
             </x-ui.heading>
         </div>

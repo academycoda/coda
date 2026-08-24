@@ -17,13 +17,13 @@
                     data-motion-hero
                     class="mt-7 text-5xl leading-none font-medium tracking-normal text-midnight sm:text-6xl md:text-7xl"
                 >
-                    Naučíme ťa
+                    Nauč sa meniť
                     <br />
-                    myslieť tvorivo.
+                    nápady na kód.
                     <br />
                     <span
                         x-data="{
-                            words: ['AI.', 'kódu.', 'logiky.', 'dizajnu.'],
+                            words: ['AI.', 'lektorov.', 'komunity.', 'dizajnu.'],
                             current: 0,
                             visible: true,
                             init() {
@@ -37,7 +37,7 @@
                                 }, 2000)
                             },
                         }"
-                        class="font-instrument font-normal text-iris italic"
+                        class="font-instrument text-4xl font-normal text-iris italic sm:text-6xl md:text-7xl"
                     >
                         Pomocou
                         <span
@@ -54,10 +54,8 @@
                     data-motion-hero
                     class="mt-7 max-w-xl text-lg leading-8 text-graphite"
                 >
-                    Coda Academy je
-                    <strong class="font-semibold">akadémia moderného vývoja v Trnave</strong>
-                    . Učíme programovať tak, ako sa to dnes robí v reálnych tímoch - s AI ako prirodzeným parťákom, nie
-                    magickou skratkou.
+                    Coda Academy je programovacia akadémia v Trnave. Naučíš sa tvoriť vlastné webové aplikácie tak, ako
+                    vznikajú v reálnych tímoch – s AI ako parťákom, nie skratkou.
                 </p>
 
                 <div
@@ -75,7 +73,7 @@
                     </flux:button>
                     <flux:button
                         variant="outline"
-                        href="#about"
+                        href="#company"
                     >
                         Kto sme?
                     </flux:button>
@@ -84,7 +82,6 @@
                 <div
                     data-motion-workflow
                     class="mt-12 inline-flex flex-wrap items-center gap-1.5 rounded-2xl border border-midnight/10 bg-alabaster p-2"
-                    aria-hidden="true"
                 >
                     <span
                         data-motion-workflow-item
@@ -100,9 +97,9 @@
                     </span>
                     <span
                         data-motion-workflow-item
-                        class="rounded-xl bg-lavender px-4 py-2.5 font-mono text-xs font-bold tracking-widest text-indigo uppercase"
+                        class="rounded-xl bg-periwinkle px-4 py-2.5 font-mono text-xs font-bold tracking-widest text-white uppercase"
                     >
-                        prompt
+                        build
                     </span>
                     <span
                         data-motion-workflow-item

@@ -51,9 +51,9 @@
 
                                 @break
                             @case(CourseStatus::Active)
-                                Tento kurz
+                                Kurz
                                 <br />
-                                <span class="font-instrument font-normal text-periwinkle italic">si nestihol.</span>
+                                <span class="font-instrument font-normal text-periwinkle italic">už beží.</span>
 
                                 @break
                             @case(CourseStatus::Closed)
@@ -84,8 +84,7 @@
 
                                 @break
                             @case(CourseStatus::Active)
-                                Tento kurz už beží. Nestihol si naskočiť, ale nezúfaj, ďalší beh už čoskoro otvorí
-                                dvere.
+                                Prihlásiť sa už nestihneš, ale ďalší beh otvoríme čoskoro.
 
                                 @break
                             @case(CourseStatus::Closed)

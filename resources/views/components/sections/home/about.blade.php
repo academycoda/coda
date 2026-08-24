@@ -1,11 +1,11 @@
 @php
     $principles = [
-        ['01', 'huge.source-code', 'Moderné technológie', 'Učíme technológie, ktoré sa používajú dnes. Študenti pracujú s nástrojmi a postupmi, ktoré využívajú profesionálne tímy pri vývoji softvéru.'],
-        ['02', 'huge.compass', 'Laravel ako štart, nie cieľ', 'Laravel používame ako vstupnú bránu do moderného vývoja. Princípy a spôsob premýšľania, ktoré sa naučíš, využiješ aj pri ďalších technológiách.'],
-        ['03', 'huge.stars', 'AI ako súčasť vývoja', 'AI používame prirodzene počas celého procesu tvorby. Pri učení, hľadaní riešení, debugovaní aj návrhu aplikácií. Nie ako skratku, ale ako nástroj moderného vývojára.'],
-        ['04', 'huge.code-folder', 'Reálne projekty', 'Najlepšie sa učí na skutočných problémoch. Namiesto izolovaných cvičení študenti vytvárajú projekty, ktoré sa podobajú tomu, čo vzniká v praxi.'],
-        ['05', 'huge.paint-board', 'Menej teórie, viac tvorby', 'Veríme, že technológie sa najlepšie učia ich používaním. Teóriu vysvetľujeme vtedy, keď pomáha pochopiť konkrétny problém alebo rozhodnutie.'],
-        ['06', 'huge.user-group', 'Komunita a podpora', 'Malé skupiny umožňujú individuálny prístup, spätnú väzbu a priestor na otázky. Chceme budovať komunitu mladých ľudí, ktorí sa navzájom posúvajú ďalej.'],
+        ['01', 'huge.source-code', 'Moderné technológie', 'Vyskúšaš si technológie, nástroje a postupy, ktoré dnes používajú profesionálne tímy pri vývoji softvéru.'],
+        ['02', 'huge.badge-check', 'Lektori z praxe', 'Každý kurz vedie lektor, ktorý sa téme venuje profesionálne. Získaš tak skúsenosti, postupy a spätnú väzbu priamo z reálnych projektov.'],
+        ['03', 'huge.stars', 'AI ako súčasť vývoja', 'AI budeš používať počas celého procesu tvorby – pri učení, hľadaní riešení, debugovaní aj návrhu aplikácií. Nie ako skratku, ale ako nástroj, ktorému rozumieš.'],
+        ['04', 'huge.code-folder', 'Reálne projekty', 'Namiesto izolovaných cvičení budeš riešiť skutočné problémy a vytvárať projekty podobné tým, ktoré vznikajú v praxi.'],
+        ['05', 'huge.paint-board', 'Menej teórie, viac tvorby', 'Teóriu dostaneš vtedy, keď ti pomôže pochopiť konkrétny problém alebo rozhodnutie. Väčšinu času budeš tvoriť.'],
+        ['06', 'huge.user-group', 'Komunita a podpora', 'V malej skupine dostaneš priestor na otázky, individuálnu spätnú väzbu a podporu od ľudí, ktorí sa chcú posúvať spolu s tebou.'],
     ];
 @endphp
 
@@ -14,14 +14,13 @@
         <x-ui.heading data-motion-reveal>
             <x-slot:kicker>Naša misia</x-slot>
             <x-slot:title>
-                Pripravujeme mladých ľudí
+                Technológie pochopíš,
                 <br />
-                <span class="font-instrument font-normal text-iris italic">na digitálnu budúcnosť.</span>
+                <span class="font-instrument font-normal text-iris italic">keď s nimi začneš tvoriť.</span>
             </x-slot>
             <x-slot:subtitle>
-                Technológie sa menia rýchlejšie než školské osnovy. Programovanie, umelá inteligencia a digitálne
-                nástroje sa stávajú prirodzenou súčasťou mnohých profesií. Coda Academy vznikla preto, aby mladým ľuďom
-                pomohla tieto technológie pochopiť, používať ich zodpovedne a vytvárať pomocou nich vlastné projekty.
+                Programovanie, AI a digitálne nástroje menia svet okolo teba. V Coda Academy ich nebudeš iba sledovať.
+                Naučíš sa s nimi pracovať zodpovedne a využiješ ich pri tvorbe vlastných projektov.
             </x-slot>
         </x-ui.heading>
 

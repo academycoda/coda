@@ -1,18 +1,18 @@
 @php
     $yes = [
         'si na strednej škole a chceš sa naučiť reálne programovať,',
-        'doteraz si nikdy nič nenaprogramoval(a) - alebo len trochu,',
+        's programovaním ešte len začínaš alebo už máš malé skúsenosti,',
         'chceš pochopiť, ako web funguje pod kapotou,',
         'zaujíma ťa, ako AI mení spôsob tvorby softvéru,',
-        'si pripravený/á venovať čas aj vlastným projektom a úlohám,',
+        'dokážeš venovať čas aj vlastným projektom a úlohám,',
         'vieš pravidelne chodiť na lekcie v Trnave.',
     ];
 
     $no = [
         'hľadáš online kurz, ktorý si prejdeš za víkend,',
         'očakávaš, že AI za teba vyrieši všetku prácu,',
-        'nie si ochotný/á občas si na niečom polámať zuby,',
-        'hľadáš pokročilé témy pre skúsených vývojárov,',
+        'nechceš si občas na niečom polámať zuby,',
+        'hľadáš pokročilé témy pre skúsenejších vývojárov,',
         'zaujíma ťa primárne iný typ vývoja než webové aplikácie.',
     ];
 @endphp
@@ -22,13 +22,13 @@
         <x-ui.heading
             align="center"
             tone="dark"
-            class="max-w-4xl"
+            class="max-w-5xl"
         >
             <x-slot:kicker>fit check</x-slot>
             <x-slot:title>
-                Nie každý kurz
+                Nie všetky kurzy
                 <br class="md:hidden" />
-                <span class="font-instrument font-normal text-periwinkle italic">má byť pre každého.</span>
+                <span class="font-instrument font-normal text-periwinkle italic">majú byť pre každého.</span>
             </x-slot>
             <x-slot:subtitle>
                 Najlepšie to funguje, keď vieš, do čoho ideš. Tu je rýchly filter pred prihláškou.
@@ -100,8 +100,7 @@
                     </ul>
 
                     <p class="mt-8 border-t border-white/10 pt-6 text-base leading-7 text-white/70">
-                        Ak máš pocit, že tento kurz nie je pre teba, ale rád/a by si sa pridal/a do našej komunity,
-                        neváhaj nám napísať.
+                        Ak máš pocit, že tento kurz nie je pre teba, ale chceš sa pridať do našej komunity, napíš nám.
                     </p>
                 </article>
             </div>

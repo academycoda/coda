@@ -29,8 +29,8 @@
                 <span class="font-instrument font-normal text-periwinkle italic">Nie náhradou za premýšľanie.</span>
             </x-slot>
             <x-slot:subtitle>
-                Umelá inteligencia dnes dokáže pomáhať pri tvorbe celých aplikácií. Študenti sa učia zadávať úlohy,
-                kontrolovať výsledky a využívať AI ako súčasť moderného vývojového procesu.
+                AI ti dnes môže pomôcť pri tvorbe celej aplikácie. Naučíš sa jej zadávať úlohy, kontrolovať výsledky a
+                používať ju ako súčasť vlastného procesu tvorby.
             </x-slot>
         </x-ui.heading>
 
@@ -60,8 +60,8 @@
             <div>
                 <h3 class="text-lg font-medium">Žiadny "vibe coding".</h3>
                 <p class="mt-1 text-white/65">
-                    Generovanie kódu, ktorému nerozumieš, funguje len dovtedy, kým sa niečo nepokazí. Preto učíme
-                    porozumieť riešeniu, nielen vytvoriť výsledok.
+                    Generovanie kódu, ktorému nerozumieš, funguje len dovtedy, kým sa niečo nepokazí. Preto sa naučíš
+                    rozumieť tomu, čo vytváraš, a nielen prijímať hotový výsledok.
                 </p>
             </div>
         </div>
