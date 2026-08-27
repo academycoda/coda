@@ -16,7 +16,9 @@ class CourseController
             ->description($course->meta['description']);
 
         return view('pages.courses.show', [
-            'course' => $course->load(['lecturer', 'modules', 'venue']),
+            'course' => $course
+                ->load(['lecturer', 'modules', 'venue'])
+                ->loadCount('applications'),
         ]);
     }
 }

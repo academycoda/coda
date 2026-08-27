@@ -17,11 +17,8 @@
     }
 @endphp
 
-<section
-    id="apply"
-    class="py-24 md:py-32"
->
-    <x-ui.container>
+<section id="apply">
+    <x-ui.container class="pb-24 md:pb-32">
         <div
             @class([
                 'relative grid items-center gap-10 overflow-hidden rounded-4xl bg-midnight p-6 text-white sm:p-8 md:p-12 xl:p-14',
@@ -103,6 +100,17 @@
                         @endswitch
                     </x-slot>
                 </x-ui.heading>
+
+                @if ($course->status === CourseStatus::Open && $course->applications_count > 10)
+                    <div
+                        class="mt-6 inline-flex items-center gap-3 rounded-full border border-periwinkle/30 bg-periwinkle/10 px-4 py-2"
+                    >
+                        <span class="text-xl font-medium text-periwinkle">
+                            {{ Number::format($course->applications_count) }}
+                        </span>
+                        <span class="font-mono text-xs tracking-wider text-white/70">odoslaných prihlášok</span>
+                    </div>
+                @endif
 
                 <div
                     @class([

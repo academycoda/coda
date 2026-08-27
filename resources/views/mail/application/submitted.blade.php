@@ -3,13 +3,14 @@
 
 Ahoj, {{ $application->first_name }},
 
-ďakujeme za prihlášku do kurzu **{{ $application->course->title }}**. Máme ju v systéme a ozveme sa ti emailom s ďalšími krokmi.
+ďakujeme za prihlášku do kurzu **{{ $application->course->title }}**. Máme ju v systéme. Prihlášky prechádzajú krátkym výberovým procesom, preto jej odoslanie ešte neznamená prijatie do kurzu. O výsledku ti dáme vedieť emailom.
 
 ## Čo bude nasledovať
 
 - prejdeme si tvoju prihlášku,
 - dáme ti vedieť, či potrebujeme doplniť ďalšie informácie,
-- pošleme ti detailné informácie k začiatku kurzu.
+- oznámime ti, či sme ťa do kurzu vybrali,
+- ak áno, pošleme ti detailné informácie k jeho začiatku.
 
 <x-mail::panel>
 ## Prihláška

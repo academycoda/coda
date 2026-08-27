@@ -9,7 +9,9 @@
             <h3 class="mt-6 text-3xl font-medium tracking-normal">
                 Ďakujeme, {{ $this->first_name ?: 'a vidíme sa' }}!
             </h3>
-            <p class="mt-3 leading-7 text-white/70">Prihláška dorazila. Ozveme sa ti emailom s ďalšími krokmi.</p>
+            <p class="mt-3 leading-7 text-white/70">
+                Prihláška dorazila. Po jej vyhodnotení ti emailom dáme vedieť, či sme ťa do kurzu vybrali.
+            </p>
             <flux:button
                 variant="outline"
                 href="{{ route('home') }}"

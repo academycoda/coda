@@ -1,5 +1,5 @@
 <section id="cta">
-    <x-ui.container class="py-32">
+    <x-ui.container class="pb-24 md:pb-32">
         <div
             data-motion-reveal
             class="relative overflow-hidden rounded-4xl bg-periwinkle px-8 py-16 text-white selection:bg-white selection:text-periwinkle md:px-16 md:py-20"
