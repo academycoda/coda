@@ -6,6 +6,7 @@ use App\Models\Application;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\Attributes\Queue;
@@ -26,6 +27,7 @@ class ApplicationSubmitted extends Mailable implements ShouldQueue
     {
         return new Envelope(
             subject: 'Prihláška do Coda Academy dorazila',
+            replyTo: [new Address('hello@coda.academy', 'Coda Academy')],
         );
     }
 
