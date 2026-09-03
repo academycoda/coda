@@ -17,7 +17,10 @@
     }
 @endphp
 
-<section id="apply">
+<section
+    id="apply"
+    class="scroll-mt-20 md:scroll-mt-32"
+>
     <x-ui.container class="pb-24 md:pb-32">
         <div
             @class([

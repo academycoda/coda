@@ -10,7 +10,7 @@
 
                 <div class="mt-6">
                     <span
-                        class="inline-flex h-6 items-center gap-1.5 rounded-full bg-lavender px-2.5 font-mono text-xs font-bold tracking-[0.02em] text-indigo uppercase"
+                        class="inline-flex h-6 items-center gap-1.5 rounded-full border border-periwinkle bg-lavender px-2.5 font-mono text-xs/none font-bold tracking-[0.02em] text-indigo uppercase"
                     >
                         <x-art.symbol class="size-2.5 fill-iris" />
                         Trnava · SK

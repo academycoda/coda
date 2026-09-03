@@ -26,6 +26,11 @@ export default defineConfig({
           subsets: ['latin', 'latin-ext'],
           preload: [{ weight: 400 }],
         }),
+        bunny('Fira Mono', {
+          weights: [400, 500, 700],
+          subsets: ['latin', 'latin-ext'],
+          preload: [{ weight: 400 }],
+        }),
       ],
     }),
     tailwindcss(),

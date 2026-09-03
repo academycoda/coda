@@ -21,6 +21,7 @@
 
     --font-onest: 'Onest', sans-serif;
     --font-instrument: 'Instrument Serif', serif;
+    --font-mono: 'Fira Mono', monospace;
 }
 
 @layer base {

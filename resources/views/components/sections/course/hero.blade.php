@@ -25,12 +25,12 @@
             Kurz · {{ $course->status->getLabel() }}
         </div>
 
-        <h1 class="mt-7 text-[clamp(3.5rem,8vw,8.25rem)] leading-[0.94] font-medium tracking-normal text-midnight">
+        <h1 class="mt-7 text-[clamp(3.5rem,8vw,8.25rem)] leading-[0.94] font-semibold tracking-normal text-midnight">
             {{ $course->title }}
         </h1>
 
         @if ($course->tagline)
-            <div class="mt-6 text-xl tracking-normal text-ash md:text-2xl">
+            <div class="mt-6 pl-5 font-instrument text-2xl tracking-normal text-iris italic lg:text-4xl">
                 {{ $course->tagline }}
             </div>
         @endif
@@ -66,7 +66,7 @@
             @endforeach
         </div>
 
-        <div class="mt-8 flex flex-wrap items-center gap-3.5">
+        <div class="mt-8 flex flex-wrap items-center gap-3.5 sm:px-5">
             @if ($course->is_open)
                 <flux:button
                     variant="primary"
